@@ -30,229 +30,186 @@
 
             <androidx.gridlayout.widget.GridLayout
                 android:id="@+id/gridLayout"
-                android:layout_width="412dp"
-                android:layout_height="800dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
-                android:paddingLeft="8dp"
-                app:columnCount="2"
-                app:rowCount="9">
+                app:columnCount="1"
+                app:rowCount="14">
 
                 <Button
                     android:id="@+id/helloBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_hello"
                     android:text="Hello"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/goodByeBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_goodbye"
                     android:text="Goodbye"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/yesBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_yes"
                     android:text="Yes"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/noBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_no"
                     android:text="No"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/bathroomBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_bathroom"
                     android:text="Where is the Bathroom?"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/lostBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_lost"
                     android:text="I'm Lost"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/excuseMeBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_excuse_me"
                     android:text="Excuse Me"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/thatsGoodBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_thats_good"
                     android:text="That's Good"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/englishBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_english"
                     android:text="Can you speak English?"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/awesomeBtn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_awesome"
                     android:text="Awesome!"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/japaneseBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_little_japanese"
                     android:text="I speak little Japanese"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/cheersBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_cheers"
                     android:text="Cheers!"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/dicountBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_discount"
-                    android:text="Can you give me a dicsount?"
+                    android:text="Can you give me a discount?"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/thankYouBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_thank_you"
                     android:text="Thank you!"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/howMuchBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_how_much"
                     android:text="How much is it?"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
                 <Button
                     android:id="@+id/seeYouLaterBtn"
+                    android:layout_width="match_parent"
                     android:layout_margin="6dp"
-                    android:layout_marginRight="30dp"
                     android:background="@color/colorAccent"
-                    android:gravity="fill"
                     android:onClick="play"
                     android:tag="japanese_see_you_later"
                     android:text="See You Later"
                     android:textAlignment="center"
-                    app:layout_columnWeight="1"
-                    app:layout_rowWeight="1"
                     tools:ignore="RtlCompat" />
 
 

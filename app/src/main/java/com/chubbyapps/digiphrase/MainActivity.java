@@ -2,6 +2,8 @@ package com.chubbyapps.digiphrase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.media.AudioManager;
 import android.media.AudioPlaybackConfiguration;
@@ -11,8 +13,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.IOException;
+import java.lang.reflect.Field;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,11 +31,26 @@ public class MainActivity extends AppCompatActivity {
 
     public void play(View view) throws IOException {
         String audioFile = (String) view.getTag();
-        String resource = "R.raw." + audioFile;
 
-        mediaPlayer = MediaPlayer.create(this, Uri.parse(Uri.encode(resource)));
+        int resId = getResId(audioFile, R.raw.class);
+
+        if (resId == -1) {
+            Toast.makeText(this, "Unable to play audio.", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        mediaPlayer = MediaPlayer.create(this, resId);
 
         mediaPlayer.start();
+    }
 
+    private int getResId(String resName, Class<?> c) {
+        try {
+            Field field = c.getDeclaredField(resName);
+            return field.getInt(field);
+        } catch (Exception e) {
+            Log.i("ERROR", e.toString());
+            return -1;
+        }
     }
 }
